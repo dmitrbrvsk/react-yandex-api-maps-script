@@ -1,0 +1,27 @@
+{
+  "name": "react-yandex-api-maps-script",
+  "version": "1.0.0",
+  "description": "yandex api maps script binding for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrbrvsk/react-yandex-api-maps-script.git"
+  },
+  "author": "dmitrbrvsk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrbrvsk/react-yandex-api-maps-script/issues"
+  },
+  "homepage": "https://github.com/dmitrbrvsk/react-yandex-api-maps-script#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "yandex",
+    "yandex api",
+    "yandex-maps",
+    "yandex-script"
+  ]
+}
