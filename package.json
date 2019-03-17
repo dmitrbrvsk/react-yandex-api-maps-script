@@ -2,15 +2,16 @@
   "name": "react-yandex-api-maps-script",
   "version": "1.0.0",
   "description": "yandex api maps script binding for React",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir lib",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmitrbrvsk/react-yandex-api-maps-script.git"
   },
-  "author": "dmitrbrvsk",
+  "author": "Dmitrij Borovskij (https://github.com/dmitrbrvsk)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dmitrbrvsk/react-yandex-api-maps-script/issues"
@@ -23,5 +24,15 @@
     "yandex api",
     "yandex-maps",
     "yandex-script"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "dependencies": {}
 }
