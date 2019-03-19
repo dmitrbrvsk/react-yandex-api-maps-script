@@ -7,8 +7,8 @@ const srcApi = {
   paid: 'https://enterprise.api-maps.yandex.ru',
 }
 
-const YandexApiMapsScript = ({apikey, typeVersionApi}) => {
-  const src = `${srcApi[typeVersionApi]}/2.1/?lang=ru_RU&amp;apikey=${apikey}`
+const YandexApiMapsScript = ({apikey, typeApi}) => {
+  const src = `${srcApi[typeApi]}/2.1/?lang=ru_RU&amp;apikey=${apikey}`
 
   return (
     <ScriptTag src={src} type="text/javascript" />
@@ -21,7 +21,7 @@ YandexApiMapsScript.propTypes = {
 }
 
 YandexApiMapsScript.defaultProps = {
-  typeSrc: srcApi.free,
+  typeApi: srcApi.free,
 }
 
 export default YandexApiMapsScript
