@@ -7,5 +7,5 @@
 ```javascript
 import YandexApiMapsScript from 'react-yandex-api-maps-script';
 
-<YandexApiMapsScript apikey={'apikey'} />
+<YandexApiMapsScript apikey={'apikey'} typeVersionApi={'free'} />
 ```

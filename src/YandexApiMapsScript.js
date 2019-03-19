@@ -3,12 +3,12 @@ import ScriptTag from 'react-script-tag'
 import { string } from 'prop-types'
 
 const srcApi = {
-  freeVersion: 'https://api-maps.yandex.ru',
-  paidVersion: 'https://enterprise.api-maps.yandex.ru',
+  free: 'https://api-maps.yandex.ru',
+  paid: 'https://enterprise.api-maps.yandex.ru',
 }
 
-const YandexApiMapsScript = ({apikey, srcApi}) => {
-  const src = `${srcApi}/2.1/?lang=ru_RU&amp;apikey=${apikey}`
+const YandexApiMapsScript = ({apikey, typeVersionApi}) => {
+  const src = `${srcApi[typeVersionApi]}/2.1/?lang=ru_RU&amp;apikey=${apikey}`
 
   return (
     <ScriptTag src={src} type="text/javascript" />
@@ -21,7 +21,7 @@ YandexApiMapsScript.propTypes = {
 }
 
 YandexApiMapsScript.defaultProps = {
-  typeSrc: srcApi.freeVersion,
+  typeSrc: srcApi.free,
 }
 
 export default YandexApiMapsScript
