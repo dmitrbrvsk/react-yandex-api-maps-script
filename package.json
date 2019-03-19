@@ -1,6 +1,6 @@
 {
   "name": "react-yandex-api-maps-script",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "yandex api maps script binding for React",
   "main": "./lib/index.js",
   "scripts": {
@@ -32,8 +32,9 @@
     "@babel/preset-react": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-script-tag": "^1.1.2"
+    "react-dom": "^16.8.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-script-tag": "^1.1.2"
+  }
 }
