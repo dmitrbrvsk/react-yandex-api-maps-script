@@ -21,7 +21,7 @@ YandexApiMapsScript.propTypes = {
 }
 
 YandexApiMapsScript.defaultProps = {
-  typeApi: srcApi.free,
+  typeApi: 'free',
 }
 
 export default YandexApiMapsScript
