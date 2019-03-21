@@ -19,18 +19,7 @@ const YandexApiMapsScript = ({
   onload,
   onerror
 }) => {
-  const src = `
-    ${srcApi[typeApi]}/2.1/
-    ?lang=${lang}
-    &apikey=${apikey}
-    &coordorder=${coordorder}
-    &load=${load}
-    &mode=${mode}
-    &csp=${csp}
-    &ns=${ns}
-    &onload=${onload}
-    &onerror=${onerror}
-  `
+  const src = `${srcApi[typeApi]}/2.1/?lang=${lang}&apikey=${apikey}&coordorder=${coordorder}&load=${load}&mode=${mode}&csp=${csp}&ns=${ns}&onload=${onload}&onerror=${onerror}`
 
   return (
     <ScriptTag src={src} type="text/javascript" />
